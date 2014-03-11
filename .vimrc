@@ -1,3 +1,4 @@
+execute pathogen#infect()
 set nocompatible
 filetype off
 syntax enable
@@ -20,29 +21,22 @@ set autoread
 
 set rnu "relative line numbers
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
 let g:ruby_debugger_progname = 'mvim'
-
-" required! 
-Bundle 'gmarik/vundle'
 
 " My Bundles here:
 "
 " original repos on github
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-rails'
-Bundle 'mileszs/ack.vim'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'ervandew/supertab'
-Bundle 'kien/ctrlp.vim'
-Bundle 'Rename'
-Bundle 'thoughtbot/vim-rspec'
-Bundle 'Align'
+" Bundle 'tpope/vim-surround'
+" Bundle 'tpope/vim-unimpaired'
+" Bundle 'tpope/vim-repeat'
+" Bundle 'tpope/vim-rails'
+" Bundle 'mileszs/ack.vim'
+" Bundle 'scrooloose/nerdcommenter'
+" Bundle 'ervandew/supertab'
+" Bundle 'kien/ctrlp.vim'
+" Bundle 'Rename'
+" Bundle 'thoughtbot/vim-rspec'
+" Bundle 'Align'
 
 filetype plugin indent on
 set ignorecase
