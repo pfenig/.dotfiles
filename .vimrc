@@ -30,13 +30,8 @@ let g:ruby_debugger_progname = 'mvim'
 " Bundle 'tpope/vim-unimpaired'
 " Bundle 'tpope/vim-repeat'
 " Bundle 'tpope/vim-rails'
-" Bundle 'mileszs/ack.vim'
-" Bundle 'scrooloose/nerdcommenter'
-" Bundle 'ervandew/supertab'
-" Bundle 'kien/ctrlp.vim'
 " Bundle 'Rename'
 " Bundle 'thoughtbot/vim-rspec'
-" Bundle 'Align'
 
 filetype plugin indent on
 set ignorecase
@@ -81,7 +76,7 @@ nnoremap <leader>q :checktime
 " Toggle line number Ctrl-N
 nmap <C-N><C-N> :set invnumber<CR>
 
-command Wipetabs :%s/	/  /g
+" command Wipetabs :%s/	/  /g
 
 " Random Leader Commands
 nnoremap <leader>W :Wipetabs
@@ -89,7 +84,6 @@ nnoremap <leader>a :tabe\|:Ack
 nnoremap <leader>g :Git
 nnoremap <leader>4 :tabclose<CR>
 nnoremap <leader>. :! 
-nnoremap <leader>{ :Align {.*<CR>
 
 " Clear highlighting
 map <C-h> :nohl<cr>
