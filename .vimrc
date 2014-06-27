@@ -92,8 +92,6 @@ map <C-h> :nohl<cr>
 map Q <Nop>
 map K <Nop>
 
-nnoremap ; :
-
 " Use space to toggle folds
 nnoremap <space> za
 
