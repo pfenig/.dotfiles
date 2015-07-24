@@ -8,7 +8,7 @@ set mouse=""
 let mapleader = ","
 
 set background=dark
-colorscheme solarized
+"colorscheme solarized
 set guifont=AndaleMono:h14
 set guioptions-=T
 set hlsearch
@@ -37,7 +37,7 @@ filetype plugin indent on
 set ignorecase
 
 " Configure vim-rspec
-let s:rspec_tmux_command = "tmux send -t primary.1 'rspec --drb {spec}' Enter" 
+let s:rspec_tmux_command = "tmux send -t 1 'rspec {spec}' Enter" 
 let g:rspec_command = "!echo " . s:rspec_tmux_command . " && " . s:rspec_tmux_command
 nnoremap <leader>rr :silent call RunNearestSpec()<CR><c-L>
 nnoremap <leader>rf :silent call RunCurrentSpecFile()<CR><c-L>
@@ -112,8 +112,11 @@ au FileType coffee setlocal shiftwidth=2 tabstop=2
 au FileType cucumber setlocal shiftwidth=2 tabstop=2
 au FileType ruby setlocal shiftwidth=2 tabstop=2
 au BufRead,BufNewFile *.thor set filetype=ruby
+au BufRead,BufNewFile *.god set filetype=ruby
 au BufRead,BufNewFile *.rabl set filetype=ruby
 au BufRead,BufNewFile *.axlsx set filetype=ruby
+au BufRead,BufNewFile *.hamljs set filetype=haml
+
 
 " Populate args list with files in the quickfix window. Obtained from.. http://stackoverflow.com/questions/5686206/search-replace-using-quickfix-list-in-vim
 command! -nargs=0 -bar Qargs execute 'args ' . QuickfixFilenames()
